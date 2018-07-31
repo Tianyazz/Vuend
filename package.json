@@ -1,15 +1,32 @@
 {
-  "name": "end",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "END <tianya900625@163.com>",
+  "name": "vuend",
+  "version": "1.0.1",
+  "description": "A Component Library for Vue.js.",
+  "author": "END",
   "private": true,
+  "main": "dist/vuend.min.js", 
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SkinsTY/Vuend.git"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "packages"
+  ],
+  "keywords": [
+    "vue",
+    "components",
+    "vuend"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SkinsTY/Vuend/blob/master/README.md",
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

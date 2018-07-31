@@ -4,9 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import DemoBlock from './components/demo-block.vue'
-import endui from '../packages/index'
+import vuend from '../packages/index'
 
-Vue.use(endui)
+Vue.use(vuend)
 Vue.config.productionTip = false
 Vue.component('demo-block', DemoBlock)
 

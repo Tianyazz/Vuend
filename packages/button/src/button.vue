@@ -1,13 +1,18 @@
 <!-- 按钮 -->
 <template>
-  <div class="end-button">
+  <div class="end-button" @click="clickHanlder">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'EndButton'
+  name: 'EndButton',
+  methods: {
+    clickHanlder () {
+      console.log(1)
+    }
+  }
 }
 </script>
 
