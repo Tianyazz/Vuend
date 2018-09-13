@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import DemoBlock from './components/demo-block.vue'
 import vuend from '../packages/index'
+import 'highlight.js/styles/color-brewer.css'
+import 'lib-flexible'
+import './assets/style/common.scss'
 
 Vue.use(vuend)
 Vue.config.productionTip = false

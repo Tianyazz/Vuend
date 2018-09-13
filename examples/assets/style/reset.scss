@@ -1,0 +1,36 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family: couriernew, courier, monospace; }
+small{ font-size: $px20; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a, a:hover, a:active, a:visited { color: $blue; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+legend { color: #000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; -webkit-appearance: none; outline: none; color: #666;}
+table { border-collapse:collapse; border-spacing:0; }
+html, body {
+  font-family: '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  background: #FFFFFF;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, a, span, em, i, b, section, article, sub, sup, strong
+blockquote, dl, dt, dd, ul, ol, li, pre,
+form, fieldset, legend, button, input, select, textarea, label,
+th, td, img, div, header, footer, nav {
+  font-size: $px18;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}

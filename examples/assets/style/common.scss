@@ -1,0 +1,43 @@
+@import './global';
+@import './reset';
+@import './scss/mobile';
+@font-face {
+  font-family: 'iconfont';  /* project id 800607 */
+  src: url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.eot');
+  src: url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.woff') format('woff'),
+  url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.svg#iconfont') format('svg');
+}
+h1, .font-48 { font-size: $px48; }
+h2, .font-36 { font-size: $px36; }
+h3, .font-24 { font-size: $px24; }
+.mb-10 { margin-bottom: $px10; }
+.mb-20 { margin-bottom: $px20; }
+.mr-10 { margin-right: $px10; }
+.mr-20 { margin-right: $px20; }
+.pd-10 { padding: $px10; }
+.pa-10 { padding: 0 $px10; }
+.pa-20 { padding: 0 $px20; }
+.pb-10 { padding-bottom: $px10; }
+.pb-20 { padding-bottom: $px20; }
+.icon {
+  @include flexs;
+  @include justify-content;
+  width: $px36;
+  height: $px36;
+  font-family: iconfont;
+  font-size: $px36;
+  line-height: $px36;
+}
+.center {
+  text-align: center;
+}
+.full-side {
+  border: 1px solid #ddd;
+}
+/* 禁用 */
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}

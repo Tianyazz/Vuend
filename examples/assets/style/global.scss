@@ -1,0 +1,200 @@
+/* 页面跳转动画效果参数默认值 */
+// $ios-transition-duration: 500ms !default;
+// $ios-transition-timing-function: cubic-bezier(.36, .66, .04, 1) !default;
+// $android-transition-duration: 200ms !default;
+// $android-transition-timing-function: cubic-bezier(0.4, 0.6, 0.2, 1) !default;
+/* color */
+/* 50, 135, 255 */
+$blue: #3287FF;
+/* 255, 78, 78 */
+$red: #FF4E4E;
+/* 68, 204, 0 */
+$green: #44CC00;
+/* 255, 189, 23 */
+$yellow: #FFBD17;
+$gray: #F5F5F5;
+/* 72, 71, 70 */
+$dark: #484746;
+
+/* 计算主题颜色、透明度，rgba模式 */
+@function rgb($col: #000, $o: 1) {
+  @if $col == #3287FF {
+    @debug "$col is #{$col}";
+    @return rgba(50, 135, 255, $o);
+  } @elseif $col == #FF4E4E {
+    @debug "$col is #{$col}";
+    @return rgba(255, 78, 78, $o);
+  } @elseif $col == #44CC00 {
+    @debug "$col is #{$col}";
+    @return rgba(68, 204, 0, $o);
+  } @elseif $col == #FFBD17 {
+    @debug "$col is #{$col}";
+    @return rgba(255, 189, 23, $o);
+  } @else {
+    @debug "$col is #{$col}";
+    @return rgba(0, 0, 0, $o);
+  }
+}
+/* 计算单位：rem */
+@function px2rem( $px: 24px, $browser-default-font-size: 64px) {
+  @return ( $px / $browser-default-font-size) * 1rem;
+}
+/* size value px */
+$px5: px2rem(5px);
+$px10: px2rem(10px);
+$px18: px2rem(18px);
+$px20: px2rem(20px);
+$px24: px2rem();
+$px30: px2rem(30px);
+$px36: px2rem(36px);
+$px40: px2rem(40px);
+$px48: px2rem(48px);
+$px60: px2rem(60px);
+
+/* 圆角 */
+@mixin radius( $r: 12px ) {
+  -webkit-border-radius: px2rem($r);
+     -moz-border-radius: px2rem($r);
+          border-radius: px2rem($r);
+      -ms-border-radius: px2rem($r);
+}
+
+/* 阴影 */
+@mixin shadow( $x: 0px, $y: 0px, $z: 20px, $s: 0px, $b: rgba(0, 0, 0, .1)) {
+  -webkit-box-shadow: px2rem($x) px2rem($y) px2rem($z) px2rem($s) $b;
+     -moz-box-shadow: px2rem($x) px2rem($y) px2rem($z) px2rem($s) $b;
+          box-shadow: px2rem($x) px2rem($y) px2rem($z) px2rem($s) $b;
+      -ms-box-shadow: px2rem($x) px2rem($y) px2rem($z) px2rem($s) $b;
+}
+
+/* 位移 */
+@mixin translate( $x: 0, $y: 0) {
+  -webkit-transform: translate( $x, $y );
+     -moz-transform: translate( $x, $y );
+      -ms-transform: translate( $x, $y );
+          transform: translate( $x, $y );
+}
+
+/* 缩放 */
+@mixin scale( $x: 1, $y: 1) {
+  -webkit-transform: scale( $x, $y );
+     -moz-transform: scale( $x, $y );
+      -ms-transform: scale( $x, $y );
+          transform: scale( $x, $y );
+}
+
+/* 位移加等比缩放 */
+@mixin translateScale( $x: 0, $y: 0, $z: 1) {
+  -webkit-transform: translate( $x, $y ) scale( $z, $z );
+     -moz-transform: translate( $x, $y ) scale( $z, $z );
+      -ms-transform: translate( $x, $y ) scale( $z, $z );
+          transform: translate( $x, $y ) scale( $z, $z );
+}
+
+/* 动画 */
+@mixin transition( $property: all, $s: .35s, $effect: ease) {
+  -webkit-transition: $property $s $effect;
+     -moz-transition: $property $s $effect;
+      -ms-transition: $property $s $effect;
+          transition: $property $s $effect;
+}
+
+/* 旋转 */
+@mixin rotate( $deg: 45deg ) {
+  -webkit-transform: rotate( $deg );
+  -moz-transform: rotate( $deg );
+  -ms-transform: rotate( $deg );
+  transform: rotate( $deg );
+}
+
+/* 左右上下垂直居中 */
+@mixin centerMiddle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include translate(-50%, -50%);
+}
+
+/* 垂直居中 */
+@mixin middle {
+  position: absolute;
+  top: 50%;
+  @include translate(0, -50%);
+}
+
+/* 禁止选中文本 */
+@mixin user-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* 动画 */
+@mixin animation( $name, $d: .3s, $fun: ease, $delay: 0s, $count: 1, $mode: both ) {
+  -webkit-animation: $name $d $fun $delay $count;
+  -moz-animation: $name $d $fun $delay $count;
+  -ms-animation: $name $d $fun $delay $count;
+  animation: $name $d $fun $delay $count;
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  -ms-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+
+/* 渐变色 */
+@mixin grad( $deg: 0, $color1: #000, $color2: #fff, $color3: #fff ) {
+  background: -webkit-linear-gradient($deg, $color1, $color2, $color3);
+  background: -o-linear-gradient($deg, $color1, $color2, $color3);
+  background: -moz-linear-gradient($deg, $color1, $color2, $color3);
+  background: linear-gradient($deg, $color1, $color2, $color3);
+}
+
+/* keyframes */
+@mixin keyframes( $animationName ) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+/* 文本溢出省略号 */
+@mixin ellipsis( $line: 2 ) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  @include box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+/* 弹性盒子模型 */
+@mixin flexs {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+@mixin align-items( $a: center ) {
+  -webkit-align-items: $a;
+  align-items: $a;
+}
+@mixin justify-content( $j: center) {
+  -webkit-justify-content: $j;
+  justify-content: $j;
+}
+/* 添加width: 0%; 这样felx就会按照对应的比例分配 */
+@mixin flex( $x: 1 ) {
+  -webkit-box-flex: $x;
+  -webkit-flex: $x;
+  flex: $x;
+  width: 0%;
+}

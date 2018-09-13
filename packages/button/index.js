@@ -5,10 +5,3 @@ EndButton.install = function (Vue) {
 }
 
 export default EndButton
-// const components = [EndButton]
-
-// export default function (Vue) {
-//   components.map(component => {
-//     Vue.component(component.name, component)
-//   })
-// }
