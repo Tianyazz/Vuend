@@ -1,4 +1,4 @@
-![image](https://github.com/SkinsTY/parking/blob/master/src/assets/image/3.jpg)
+![image](https://github.com/SkinsTY/vuend/blob/master/example/assets/img/logo.png)
 
 #### 安装 Install
 npm install vuend -D
