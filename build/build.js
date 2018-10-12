@@ -24,7 +24,7 @@ if (process.env.BUILD === 'publish') {
   shell.rm('-rf', './docs')
 }
 
-const spinner = ora('building ' + (process.env.BUILD === 'publish' ? 'vuend' : 'vuend-pages') + ' for production...')
+const spinner = ora('building ' + (process.env.BUILD === 'publish' ? 'vuend' : 'gh-pages') + ' for production...')
 spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
