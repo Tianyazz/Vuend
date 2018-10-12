@@ -1,7 +1,6 @@
-![image](https://github.com/SkinsTY/vuend/blob/master/example/assets/img/logo.png)
 <p align="center">
   <a href="https://skinsty.github.io/Vuend/docs/">
-    <img src="https://github.com/SkinsTY/vuend/raw/master/logo.png">
+    <img src="https://github.com/SkinsTY/vuend/raw/master/example/assets/img/logo.png">
   </a>
 </p>
 
