@@ -27,7 +27,7 @@ EndSelect|`<end-select></end-select>`|选择列表
 *****
 ##### vuend 服务
 服务名称（全局变量）|描述
---:|---:
+:--|---:
 $toast|文字提示
 $dialog|对话框
 $loading|加载提示
