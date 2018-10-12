@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~global/global';
+@import '~global/common';
 .end-button {
   position: relative;
   height: $px48;
@@ -65,6 +65,7 @@ export default {
     }
     &.button-plain {
       color: $red;
+      background: none;
     }
   }
   &.button-green {
@@ -76,6 +77,7 @@ export default {
     }
     &.button-plain {
       color: $green;
+      background: none;
     }
   }
   &.button-yellow {
@@ -87,6 +89,7 @@ export default {
     }
     &.button-plain {
       color: $yellow;
+      background: none;
     }
   }
   &.button-plain {

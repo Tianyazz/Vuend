@@ -2,14 +2,12 @@
   <ul class="sidebar">
     <router-link tag="li" to="{ name: 'changeLog' }"><h3>更新日志</h3></router-link>
     <li class="component"><h4>组件</h4></li>
-    <ul>
-      <router-link
-        tag="li"
-        v-for="(item, index) in navData"
-        :key="index"
-        :to="{ name: item.name }"
-      >{{ item.en }}&#12288;{{ item.cn }}</router-link>
-    </ul>
+    <router-link
+      tag="li"
+      v-for="(item, index) in navData"
+      :key="index"
+      :to="{ name: item.name }"
+    >{{ item.en }}&#12288;{{ item.cn }}</router-link>
   </ul>
 </template>
 
@@ -58,6 +56,22 @@ export default {
         name: 'tabs',
         cn: '选项卡',
         en: 'tabs'
+      }, {
+        name: 'select',
+        cn: '选择列表',
+        en: 'select'
+      }, {
+        name: 'loading',
+        cn: '加载提示',
+        en: 'loading'
+      }, {
+        name: 'toast',
+        cn: '文字提示',
+        en: 'toast'
+      }, {
+        name: 'dialog',
+        cn: '对话框',
+        en: 'dialog'
       }]
     }
   },
@@ -99,6 +113,7 @@ export default {
     padding: $px10 $px20;
     margin-bottom: $px10;
     @include transition;
+    font-size: $px18;
     cursor: pointer;
     &:before {
       content: "";

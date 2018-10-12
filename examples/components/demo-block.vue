@@ -88,11 +88,13 @@ export default {
     .demo-block-mobile {
       width: px2rem(480px);
       border: 1px solid #ddd;
+      * {
+        font-size: $px18;
+      }
       .header {
         @include flexs;
         @include align-items;
         height: px2rem(60px);
-        margin-bottom: px2rem(20px);
         padding: 0 $px10;
         color: #fff;
         background: rgba(0, 0, 0, .9);
@@ -109,7 +111,7 @@ export default {
         }
       }
       .source {
-        padding: 0 px2rem(20px) px2rem(20px);
+        padding: px2rem(20px) px2rem(20px) px2rem(20px);
       }
     }
   }
@@ -123,9 +125,11 @@ export default {
     border-radius: 0 0 2px 2px;
     -webkit-transition: background-color .4s;
     transition:  background-color .4s;
-    font-size: 14px;
     color: #444;
     line-height: 2;
+    p {
+      font-size: $px18;
+    }
     code {
       display: inline-block;
       height: 18px;
@@ -134,14 +138,18 @@ export default {
       border-radius: 3px;
       color: #444;
       font-family: Menlo, Monaco, Consolas, Courier, monospace;
-      font-size: 14px;
+      font-size: $px18;
       line-height: 18px;
       background-color: #e6effb;
     }
   }
   .demo-block-code code {
     padding: 20px;
+    font-size: $px18;
     background: #F1F1F1;
+    span {
+      font-size: $px18;
+    }
   }
 }
 .sh-checkbox {

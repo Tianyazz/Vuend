@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~global/global';
+@import '~global/common';
 .end-col {
   @include flexs;
   @include flex;

@@ -14,6 +14,10 @@ const List = r => require.ensure([], () => r(require('@/docs/list.md')), 'compon
 const Search = r => require.ensure([], () => r(require('@/docs/search.md')), 'components')
 const Textarea = r => require.ensure([], () => r(require('@/docs/textarea.md')), 'components')
 const Tabs = r => require.ensure([], () => r(require('@/docs/tabs.md')), 'components')
+const Select = r => require.ensure([], () => r(require('@/docs/select.md')), 'components')
+const Loading = r => require.ensure([], () => r(require('@/docs/loading.md')), 'services')
+const Toast = r => require.ensure([], () => r(require('@/docs/toast.md')), 'services')
+const Dialog = r => require.ensure([], () => r(require('@/docs/dialog.md')), 'services')
 
 Vue.use(Router)
 
@@ -62,6 +66,22 @@ export default new Router({
         path: '/tabs',
         name: 'tabs',
         component: Tabs
+      }, {
+        path: '/select',
+        name: 'select',
+        component: Select
+      }, {
+        path: '/loading',
+        name: 'loading',
+        component: Loading
+      }, {
+        path: '/toast',
+        name: 'toast',
+        component: Toast
+      }, {
+        path: '/dialog',
+        name: 'dialog',
+        component: Dialog
       }]
     },
     {

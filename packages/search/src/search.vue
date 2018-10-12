@@ -4,7 +4,12 @@
     <end-col align>
       <input type="text" v-model="v" :placeholder="placeholder" ref="searchInput">
     </end-col>
-    <end-button :class="['button-radius', themeButton]" @click="search" v-if="option.isButton" v-text="option.text"></end-button>
+    <end-button
+      :class="['button-radius', themeButton]"
+      @click="search"
+      v-if="option.isButton"
+      v-text="option.text"
+    ></end-button>
   </end-row>
 </template>
 
@@ -58,12 +63,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~global/global';
+@import '~global/common';
 .end-search {
   @include radius;
   background: $gray;
   .icon {
     color: $blue;
+    font-size: $px36;
   }
   &.theme-red .icon {
     color: $red

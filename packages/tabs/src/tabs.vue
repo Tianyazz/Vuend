@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~global/global';
+@import '~global/common';
 .end-tabs {
   @include flexs;
   position: relative;

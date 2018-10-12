@@ -9,7 +9,8 @@ sup { vertical-align:text-top; }
 sub { vertical-align:text-bottom; }
 legend { color: #000; }
 fieldset, img { border:0; }
-button, input, select, textarea { font-size:100%; -webkit-appearance: none; outline: none; color: #666;}
+input, select, textarea { font-size:100%; -webkit-appearance: none; outline: none; color: #666;}
+button { font-size:100%; -webkit-appearance: none; outline: none; }
 table { border-collapse:collapse; border-spacing:0; }
 html, body {
   font-family: '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
@@ -22,7 +23,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, a, span, em, i, b, section, article, sub, s
 blockquote, dl, dt, dd, ul, ol, li, pre,
 form, fieldset, legend, button, input, select, textarea, label,
 th, td, img, div, header, footer, nav {
-  font-size: $px18;
+  font-size: $px24;
   font-style: normal;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

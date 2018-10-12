@@ -8,6 +8,11 @@ import list from './list/index'
 import search from './search/index'
 import textarea from './textarea/index'
 import tabs from './tabs/index'
+import select from './select/index'
+
+import $loading from './loading/index'
+import $toast from './toast/index'
+import $dialog from './dialog/index'
 
 const components = [
   button,
@@ -20,12 +25,16 @@ const components = [
   list,
   search,
   textarea,
-  tabs
+  tabs,
+  select
 ]
 
 const install = function (Vue) {
   if (install.installed) return
   components.map(component => Vue.component(component.name, component))
+  Vue.prototype.$loading = window.$loading = $loading
+  Vue.prototype.$toast = window.$toast = $toast
+  Vue.prototype.$dialog = window.$dialog = $dialog
 }
 
 if (typeof window !== 'undefind' && window.Vue) {

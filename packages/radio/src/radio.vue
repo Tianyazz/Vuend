@@ -1,5 +1,9 @@
 <template>
-  <div :class="['end-radio', themeClass, {'disabled': disabled}]" @click="handleClick(label)" ref="radio">
+  <div 
+    :class="['end-radio', themeClass, {'disabled': disabled}]"
+    @click="handleClick(label)" 
+    ref="radio"
+  >
     <i :class="['icon', {'checked': v === label}]">&#xeaf1;</i>
     <input type="radio" v-model="v" :value="label">
     <span><slot></slot></span>
@@ -47,9 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~global/global';
+@import '~global/common';
 .end-radio {
   @include flexs;
+  @include align-items;
   input {
     display: none;
   }

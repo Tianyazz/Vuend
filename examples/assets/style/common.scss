@@ -1,6 +1,5 @@
 @import './global';
 @import './reset';
-@import './scss/mobile';
 @font-face {
   font-family: 'iconfont';  /* project id 800607 */
   src: url('//at.alicdn.com/t/font_800607_j0mu4jwe1ii.eot');
@@ -27,7 +26,6 @@ h3, .font-24 { font-size: $px24; }
   width: $px36;
   height: $px36;
   font-family: iconfont;
-  font-size: $px36;
   line-height: $px36;
 }
 .center {
@@ -40,4 +38,13 @@ h3, .font-24 { font-size: $px24; }
 .disabled {
   pointer-events: none;
   opacity: 0.7;
+}
+/* 渐变 */
+.opacity-enter-active,
+.opacity-leave-active {
+  @include transition;
+}
+.opacity-enter,
+.opacity-leave-to {
+  opacity: 0;
 }

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~global/global';
+@import '~global/common';
 .list-item {
   @include flexs;
   @include align-items;
