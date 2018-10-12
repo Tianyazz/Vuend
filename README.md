@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="width: 200px">
   <a href="https://skinsty.github.io/Vuend/docs/">
     <img src="https://github.com/SkinsTY/Vuend/blob/master/examples/assets/img/logo.png">
   </a>
