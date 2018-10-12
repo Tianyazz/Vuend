@@ -1,22 +1,13 @@
-##### 介绍
-###### 什么是vuend？
-> 一个基于vue.js的UI框架，用于快速构建移动端应用（第一个UI，初出茅庐）  
-*****
-
 #### 安装 Install
 npm install vuend -D
-
 #### main.js导入使用css
-
 ``` javascriptimport Vue from 'vue'
 import vuend from 'vuend'
 import 'vuend/dist/vuend.min.css'
 
 Vue.use(vuend)
 ```
-
 *****
-
 #### 2018-10-12 更新1.0.1版本
 ##### vuend 组件
 
@@ -33,8 +24,6 @@ EndSearch|`<end-search></end-search>`|搜索
 EndTextarea|`<end-textarea></end-textarea>`|文本域
 EndTabs|`<end-tabs></end-tabs>`|选项卡
 EndSelect|`<end-select></end-select>`|选择列表
-<br />
-
 *****
 ##### vuend 服务
 
