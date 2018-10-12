@@ -11,6 +11,7 @@
   <a href="https://skinsty.github.io/Vuend/docs/">https://skinsty.github.io/Vuend/docs/</a>
 </p>
 ****
+
 ## 安装 Install
 npm install vuend -D
 ### main.js导入使用css
