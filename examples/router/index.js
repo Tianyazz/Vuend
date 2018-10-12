@@ -4,6 +4,7 @@ const Home = r => require.ensure([], () => r(require('@/views/home/home')), 'hom
 const Mobile = r => require.ensure([], () => r(require('@/views/mobile')), 'mobile')
 const Demo = r => require.ensure([], () => r(require('@/views/demo')), 'mobile')
 const Detail = r => require.ensure([], () => r(require('@/views/detail')), 'mobile')
+const Log = r => require.ensure([], () => r(require('@/docs/log.md')), 'log')
 const Button = r => require.ensure([], () => r(require('@/docs/button.md')), 'components')
 const Radio = r => require.ensure([], () => r(require('@/docs/radio.md')), 'components')
 const Flexbox = r => require.ensure([], () => r(require('@/docs/flexbox.md')), 'components')
@@ -27,6 +28,10 @@ export default new Router({
       path: '/',
       component: Home,
       children: [{
+        path: '',
+        name: 'log',
+        component: Log
+      }, {
         path: '/button',
         name: 'button',
         component: Button

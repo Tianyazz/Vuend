@@ -1,6 +1,6 @@
 <template>
   <ul class="sidebar">
-    <router-link tag="li" to="{ name: 'changeLog' }"><h3>更新日志</h3></router-link>
+    <router-link tag="li" :to="{ name: 'log' }" class="log"><h3>更新日志</h3></router-link>
     <li class="component"><h4>组件</h4></li>
     <router-link
       tag="li"
@@ -131,6 +131,13 @@ export default {
       background: rgba(68, 204, 0, .1);
       &:before {
         height: 100%;
+      }
+      &.log {
+        color: #333;
+        background: none;
+        &:before {
+          height: 0;
+        }
       }
     }
     &.component {
