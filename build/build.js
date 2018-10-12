@@ -2,16 +2,29 @@
 require('./check-versions')()
 
 process.env.NODE_ENV = 'production'
+if (!process.env.BUILD) {
+  process.env.BUILD = 'publish'
+} else {
+  process.env.BUILD = ''
+}
 
 const ora = require('ora')
 const rm = require('rimraf')
 const path = require('path')
 const chalk = require('chalk')
+const shell = require('shelljs')
 const webpack = require('webpack')
 const config = require('../config')
-const webpackConfig = require('./webpack.prod.conf')
+let webpackConfig
+if (process.env.BUILD === 'publish') {
+  webpackConfig = require('./webpack.prod.conf')
+  shell.rm('-rf', './dist')
+} else {
+  webpackConfig = require('./webpack.docs.conf')
+  shell.rm('-rf', './docs')
+}
 
-const spinner = ora('building for production...')
+const spinner = ora('building ' + (process.env.BUILD === 'publish' ? 'vuend' : 'vuend-pages') + ' for production...')
 spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {

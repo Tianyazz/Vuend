@@ -5,7 +5,6 @@ const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 const markdownRender = require('markdown-it')()
 
-
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -27,8 +26,6 @@ module.exports = {
     app: './examples/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
