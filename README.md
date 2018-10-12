@@ -1,3 +1,5 @@
+![image](https://github.com/SkinsTY/parking/blob/master/src/assets/image/3.jpg)
+
 #### 安装 Install
 npm install vuend -D
 #### main.js导入使用css
