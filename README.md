@@ -26,7 +26,6 @@ EndTabs|`<end-tabs></end-tabs>`|选项卡
 EndSelect|`<end-select></end-select>`|选择列表
 *****
 ##### vuend 服务
-
 服务名称（全局变量）|描述
 ---|:--:|---:
 $toast|文字提示
