@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <img src="@/assets/img/logo@2x.png" alt="">
+      <img src="@/assets/img/logo@2.png" alt="">
       <h2>VUEND</h2>
     </div>
     <ul>
