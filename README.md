@@ -7,7 +7,7 @@
 <p align="center">Vuend is Mobile UI Components, based on Vue.js.</p>
 
 ## Demo
-<p align="center">
+<p>
   <a href="https://skinsty.github.io/Vuend/docs/">https://skinsty.github.io/Vuend/docs/</a>
 </p>
 
