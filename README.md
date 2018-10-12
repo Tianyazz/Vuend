@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<p align="center">Mobile UI Components, based on Vue.js.</p>
+<p align="center">Vuend is Mobile UI Components, based on Vue.js.</p>
 
 ## Demo
 <p align="center">
