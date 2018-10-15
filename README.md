@@ -15,10 +15,13 @@
 
 ## 安装 Install
 npm install vuend -D
+### 采用了rem可伸缩布局方案 lib-flexible
+npm install lib-flexible -D
 ### main.js导入使用css
 ``` javascriptimport Vue from 'vue'
 import vuend from 'vuend'
 import 'vuend/dist/vuend.min.css'
+import 'lib-flexible'
 
 Vue.use(vuend)
 ```
