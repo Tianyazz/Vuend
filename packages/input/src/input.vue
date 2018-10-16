@@ -127,7 +127,7 @@ export default {
   padding: 0 $px10;
   @include transition;
   span {
-    width: px2rem(96px);
+    width: px2rem(110px);
   }
   .input {
     @include flex;

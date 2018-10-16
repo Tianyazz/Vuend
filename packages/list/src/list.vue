@@ -15,7 +15,7 @@ export default {
 .list-item {
   @include flexs;
   @include align-items;
-  height: $px60;
+  height: px2rem(80px);
   padding: $px10;
   border-bottom: 1px solid #ddd;
   &:last-child {

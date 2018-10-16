@@ -1,6 +1,7 @@
 ##### 介绍
 ###### 什么是vuend？
-一个基于vue.js的UI框架，用于快速构建移动端应用（第一个UI，初出茅庐）  
+一个基于vue.js的UI框架，用于快速构建移动端应用（初出茅庐，小试牛刀）  
+<a href="https://github.com/SkinsTY/Vuend">https://github.com/SkinsTY/Vuend</a>   
 <br />
 *****
 <br />

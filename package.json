@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A Component Library for Vue.js.",
   "author": "END",
-  "private": true,
+  "private": false,
   "main": "dist/vuend.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
