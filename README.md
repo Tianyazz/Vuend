@@ -49,6 +49,119 @@ EndSelect|`<end-select></end-select>`|选择列表
 $toast|文字提示
 $dialog|对话框
 $loading|加载提示
+*****
+### 项目结构
+.
+├── examples
+│   ├── App.vue
+│   ├── assets
+│   │   ├── img
+│   │   │   ├── logo.png
+│   │   │   └── logo2.png
+│   │   └── style
+│   │       ├── common.scss
+│   │       ├── global.scss
+│   │       ├── reset.scss
+│   │       └── scss
+│   │           └── mobile.scss
+│   ├── components
+│   │   ├── demo-block.vue
+│   │   └── header.vue
+│   ├── docs
+│   │   ├── button.md
+│   │   ├── checkbox.md
+│   │   ├── dialog.md
+│   │   ├── flexbox.md
+│   │   ├── input.md
+│   │   ├── list.md
+│   │   ├── loading.md
+│   │   ├── log.md
+│   │   ├── radio.md
+│   │   ├── search.md
+│   │   ├── select.md
+│   │   ├── tabs.md
+│   │   ├── textarea.md
+│   │   ├── toast.md
+│   │   └── toggle.md
+│   ├── main.js
+│   ├── router
+│   │   └── index.js
+│   └── views
+│       ├── demo.vue
+│       ├── detail.vue
+│       ├── home
+│       │   ├── components
+│       │   │   ├── header.vue
+│       │   │   └── sidebar.vue
+│       │   └── home.vue
+│       └── mobile.vue
+├── index.html
+├── package-lock.json
+├── package.json
+├── packages
+│   ├── button
+│   │   ├── index.js
+│   │   └── src
+│   │       └── button.vue
+│   ├── checkbox
+│   │   ├── index.js
+│   │   └── src
+│   │       └── checkbox.vue
+│   ├── dialog
+│   │   ├── index.js
+│   │   ├── mixin.js
+│   │   └── src
+│   │       ├── alert.vue
+│   │       └── confirm.vue
+│   ├── flexbox
+│   │   ├── index.js
+│   │   └── src
+│   │       ├── col.vue
+│   │       └── row.vue
+│   ├── index.js
+│   ├── input
+│   │   ├── index.js
+│   │   └── src
+│   │       └── input.vue
+│   ├── list
+│   │   ├── index.js
+│   │   └── src
+│   │       └── list.vue
+│   ├── loading
+│   │   ├── index.js
+│   │   └── src
+│   │       └── loading.vue
+│   ├── radio
+│   │   ├── index.js
+│   │   └── src
+│   │       └── radio.vue
+│   ├── search
+│   │   ├── index.js
+│   │   └── src
+│   │       └── search.vue
+│   ├── select
+│   │   ├── index.js
+│   │   └── src
+│   │       └── select.vue
+│   ├── tabs
+│   │   ├── index.js
+│   │   └── src
+│   │       └── tabs.vue
+│   ├── textarea
+│   │   ├── index.js
+│   │   └── src
+│   │       └── textarea.vue
+│   ├── toast
+│   │   ├── index.js
+│   │   └── src
+│   │       └── toast.vue
+│   ├── toggle
+│   │   ├── index.js
+│   │   └── src
+│   │       └── toggle.vue
+│   └── utils.js
+└── static
+
 ****
 
 ### Thanks to
