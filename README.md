@@ -51,6 +51,7 @@ $dialog|对话框
 $loading|加载提示
 *****
 ### 项目结构
+```
 .
 ├── examples
 │   ├── App.vue
@@ -161,6 +162,7 @@ $loading|加载提示
 │   │       └── toggle.vue
 │   └── utils.js
 └── static
+```
 
 ****
 
