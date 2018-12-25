@@ -168,7 +168,6 @@ $px60: px2rem(60px);
 @mixin ellipsis( $line: 2 ) {
   overflow : hidden;
   text-overflow: ellipsis;
-  @include box;
   -webkit-line-clamp: $line;
   -webkit-box-orient: vertical;
 }

@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:SkinsTY/Vuend.git"
+    "url": "git@github.com:Tianyazz/Vuend.git"
   },
   "files": [
     "dist",
@@ -27,7 +27,7 @@
     "vuend"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/SkinsTY/Vuend/blob/master/README.md",
+  "homepage": "https://github.com/Tianyazz/Vuend/blob/master/README.md",
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
