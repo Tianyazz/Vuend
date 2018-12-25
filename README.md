@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://skinsty.github.io/Vuend/docs/">
+  <a href="https://tianyazz.github.io/Vuend/docs/">
     <img src="https://github.com/SkinsTY/Vuend/blob/master/examples/assets/img/logo2.png">
   </a>
 </p>
@@ -8,7 +8,7 @@
 
 ## Demo
 <p>
-  <a href="https://skinsty.github.io/Vuend/docs/">https://skinsty.github.io/Vuend/docs/</a>
+  <a href="https://tianyazz.github.io/Vuend/docs/">https://tianyazz.github.io/Vuend/docs/</a>
 </p>
 
 *****  
